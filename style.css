@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Quicksand&family=Roboto+Slab:wght@100&family=Six+Caps&family=Special+Elite&display=swap');
+
+body {
+    /* 　reference from : https://stackoverflow.com/questions/55364127/making-a-dotted-grid-with-css */
+    background: white;
+    background-image: radial-gradient(black 2.5px, 
+                        transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+  }
+
+  .title{
+      position: absolute;
+      font-family: 'Six Caps', sans-serif;
+      background-color: white;
+      font-size: 6rem;
+
+      right: 21%;
+      bottom: 40%;
+  }
+
+  #name{
+    position: fixed;
+    right: 21%;
+    background-color: white;
+
+    font-family: 'Six Caps', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 12vh;
+  }
+
+  #mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  }
