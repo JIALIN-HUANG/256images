@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Quicksand&family=Roboto+Slab:wght@100&family=Six+Caps&family=Special+Elite&display=swap');
+
+.title{
+	position: absolute;
+	font-family: 'Six Caps', sans-serif;
+	background-color: white;
+	font-size: 6rem;
+
+	right: 21%;
+	bottom: 40%;
+}
+
+#name{
+  position: fixed;
+  right: 21%;
+  background-color: white;
+
+  font-family: 'Six Caps', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 12vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background-color: white
+}
+
+#ul {
+	position: relative;
+}
+
+#ul li {
+	vertical-align: top;
+
+	position: absolute;
+	transition: all 1s;
+}
+
+.container {
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	position: relative;
+
+	background-image: radial-gradient(black 2.5px, 
+				transparent 0);
+background-size: 40px 40px;
+background-position: -19px -19px;
+}
+
+#ul li img {
+	box-shadow: 0 0 5px rgba(105, 105, 105, 0.49);
+	-webkit-box-shadow: 0 0 5px rgba(105, 105, 105, 0.49);
+	width: 100px;
+	height: 100px;
+}
+
+#ul li.checked {
+	left: 50% !important;
+	top: 300px !important;
+	transform: rotate(0deg) translate(-50%, -50%) scale(1.5, 1.5) !important;
+	z-index: 99 !important;
+}
+
+.son {
+	width: 180px;
+	height: 180px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: move;
+	position: absolute;
+	top: 20px;
+}
