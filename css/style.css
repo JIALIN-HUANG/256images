@@ -11,14 +11,14 @@
 }
 
 #name{
-  position: fixed;
+  position: absolute;
   right: 21%;
   background-color: white;
 
   font-family: 'Six Caps', sans-serif;
   font-size: 3rem;
   text-align: center;
-  margin-top: 12vh;
+  margin-top: 13vh;
 }
 
 * {
@@ -46,6 +46,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	margin: auto;
+	margin-top: 2vh;
 	position: relative;
 
 	background-image: radial-gradient(black 2.5px, 
@@ -69,8 +70,8 @@ background-position: -19px -19px;
 }
 
 .son {
-	width: 15vh;
-	height: 15vh;
+	width: 19vh;
+	height: 19vh;
 
 	box-shadow: 2px 2px 5px 2px rgba(146, 146, 146, 0.49);
 	background-size: 100% 100%;
@@ -78,4 +79,73 @@ background-position: -19px -19px;
 	cursor: move;
 	position: absolute;
 	top: 20px;
+}
+#h1{
+	font-family: 'Six Caps', sans-serif;
+    position:relative;
+    top:1%;
+    left:2%;
+	z-index: 2;
+	background-color: white;
+	text-align: center;
+}
+
+#btn{
+	height: 5vh;
+	width: 9vw;
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	font-family:Arial, Helvetica, sans-serif;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+}
+
+#screenshot{
+	position: absolute;
+	top: 120px;
+	left: 370px;
+}
+
+
+@media only screen and (max-width: 640px) {
+	body{
+		background-color: white;
+	}
+
+	.title{
+		position: absolute;
+		font-family: 'Six Caps', sans-serif;
+		background-color: white;
+		font-size: 6rem;
+	
+		right: 10%;
+		bottom: 10%;
+	}
+	#name{
+		position: fixed;
+		right: 10%;
+		background-color: white;
+	  
+		font-family: 'Six Caps', sans-serif;
+		font-size: 3rem;
+		text-align: center;
+		margin-top: 8vh;
+	  }
+
+	  #h1{
+		font-family: 'Six Caps', sans-serif;
+		position:relative;
+		top:1%;
+		left:2%;
+		z-index: 2;
+		background-color: white;
+		font-size: 3rem;
+		text-align: center;
+	}
+
 }
