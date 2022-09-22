@@ -55,7 +55,7 @@ background-position: -19px -19px;
 }
 
 #ul li img {
-	box-shadow: 0 0 5px rgba(105, 105, 105, 0.49);
+	box-shadow: 10px 10px 5px 12px rgba(105, 105, 105, 0.49);
 	-webkit-box-shadow: 0 0 5px rgba(105, 105, 105, 0.49);
 	width: 100px;
 	height: 100px;
@@ -64,13 +64,15 @@ background-position: -19px -19px;
 #ul li.checked {
 	left: 50% !important;
 	top: 300px !important;
-	transform: rotate(0deg) translate(-50%, -50%) scale(1.5, 1.5) !important;
+	/* transform: rotate(0deg) translate(-50%, -50%) scale(1.5, 1.5) !important; */
 	z-index: 99 !important;
 }
 
 .son {
-	width: 180px;
-	height: 180px;
+	width: 15vh;
+	height: 15vh;
+
+	box-shadow: 2px 2px 5px 2px rgba(146, 146, 146, 0.49);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	cursor: move;

@@ -1,27 +1,24 @@
 window.addEventListener('load', function () {
-    //获取事件源
+
+    //get the images
     var ul = document.getElementById('ul');
-    //获取图片可活动区域
+    //get the picture location
     var windowW = document.documentElement.clientWidth - 340;
     var windowH = document.documentElement.clientHeight - 191;
-    //循环遍历
-    for (var i = 1; i < 30; i++) {
-        //创建li标签
+    //start the arry
+    for (var i = 1; i < 50; i++) {
+        //make the li
         var li = document.createElement('div');
-        //追加到ul的子元素
+        //add to ul's child elements
         ul.appendChild(li);
-        //创建img标签
-        //var img = document.createElement('img');
-        //li.appendChild(img);
-        // 动态插入图片
-        //img.setAttribute('src','img/'+i+'.jpg');
     }
-    //获取所有的li 
+
+    //Get all the li
     var allLi = ul.children;
     //遍历
     for (var j = 0; j < allLi.length; j++) {
         // get number from 1 to 50
-        var i = Math.floor(Math.random() * 50) + 1;    
+        var i = Math.floor(Math.random() * 50) + 1;  
         //取出单个li
         var li = allLi[j];
         //get random position
@@ -31,6 +28,8 @@ window.addEventListener('load', function () {
         // li.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
          li.className = 'son';
          li.style.backgroundImage = "url('./img/" + i + ".jpg')";
+
+         console.log("i");
         //监听点击事件
         //li.addEventListener('click',function(){
         //for(var i=0;i<allLi.length;i++){
@@ -80,3 +79,13 @@ window.addEventListener('load', function () {
     }
     dragFn('.son', '.container')
 })
+
+var a1 = ['Tom.jpg','Dick2.jpg','Harry.jpg','Bill.jpg'];
+var images = a1.slice();
+while(images.length){
+  rnd = Math.floor(Math.random() * images.length);
+  console.log(images[rnd]);
+  images[rnd] = '';
+  images = images.filter(a=>{return a});
+}
+console.log(a1);
