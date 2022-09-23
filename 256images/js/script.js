@@ -24,7 +24,7 @@ window.addEventListener("load", function () {
   var windowW = document.documentElement.clientWidth - 340;
   var windowH = document.documentElement.clientHeight - 191;
   //start the arry
-  for (var i = 1; i < 35; i++) {
+  for (var i = 1; i < 40; i++) {
     //make the li
     var li = document.createElement("div");
     //add to ul's child elements
@@ -45,7 +45,7 @@ window.addEventListener("load", function () {
     //get random angle
     // li.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
     li.className = "son";
-    li.style.backgroundImage = "url('./img/grid/" + arr[j] + ".jpg')";
+    li.style.backgroundImage = "url('./img/" + arr[j] + ".jpg')";
     //监听点击事件
     // li.addEventListener('click',function(){
     // for(var i=0;i<allLi.length;i++){
