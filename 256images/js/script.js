@@ -45,7 +45,7 @@ window.addEventListener("load", function () {
     //get random angle
     // li.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
     li.className = "son";
-    li.style.backgroundImage = "url('./img/" + arr[j] + ".jpg')";
+    li.style.backgroundImage = "url('./img/grid/" + arr[j] + ".jpg')";
     //监听点击事件
     // li.addEventListener('click',function(){
     // for(var i=0;i<allLi.length;i++){
